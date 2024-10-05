@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+    background: linear-gradient(120deg, #007bff, #d0314c);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .center {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .center h1 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid silver;
+    padding-bottom: 10px;
+  }
+  
+  .txt_field {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  
+  .txt_field input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #adadad;
+    background: none;
+    outline: none;
+  }
+  
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label {
+    top: -18px;
+    left: 0;
+    color: #2691d9;
+  }
+  
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before {
+    width: 100%;
+  }
+  
+  .txt_field label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #adadad;
+    transition: 0.3s;
+    pointer-events: none;
+  }
+  
+  .txt_field span::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #2691d9;
+    transition: 0.3s;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background: #2691d9;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background: #007bff;
+  }
+  
+  .signup_link {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666666;
+  }
+  
+  .signup_link a {
+    color: #2691d9;
+    text-decoration: none;
+  }
+  
+  .signup_link a:hover {
+    text-decoration: underline;
+  }
+  
